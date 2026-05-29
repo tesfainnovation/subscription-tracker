@@ -25,8 +25,8 @@ console.log("subscription:", subscription); // 👈 add!
 
   // ✅ fixed renewalDate
   const renewalDate = dayjs(subscription.renewalDate);
-  console.log("renewalDate:", renewalDate.format()); // 👈 add this!
-console.log("today:", dayjs().format());           // 👈 add this!
+//   console.log("renewalDate:", renewalDate.format()); // 👈 add this!
+// console.log("today:", dayjs().format());           // 👈 add this!
 
   if (renewalDate.isBefore(dayjs())) {
     console.log(`Subscription ${subscriptionId} is past due. Stopping workflow`);
